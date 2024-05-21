@@ -1,0 +1,1 @@
+A new static site using the Freelancer Jekyll theme.
