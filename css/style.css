@@ -91,7 +91,7 @@
 	padding:100px 0 100px 0;
     text-align:center;
 	height:auto;
-	background-color: #FBFBFB;
+	background-color: #f2f2f2;
 }
 .hero h1 {
 	font-size: 120px;
@@ -110,7 +110,7 @@
 	font-size: 20px;
 	margin:0;
 	padding:0;
-	opacity:0.80;
+	opacity:.8;
 	color: #3d3d3d;
 	letter-spacing: 15px;
 	line-height: 50px;
@@ -121,7 +121,7 @@
     font-size: 20px;
 	margin:0;
 	padding:0;
-	color: #f8f8f8;
+	color: #000000;
 	letter-spacing: 15px;
 	line-height: 50px;
     text-align: center;
@@ -152,12 +152,31 @@ svg:not(:root) {
   color: #57b7ba;
 }
 .block-text {
-  font-size: 1.5em;  /* Adjust for desired text size */
+  font-size: 1.25em;  /* Adjust for desired text size */
 }
 
 .block-icon {
-  font-size: 4em;  
+  font-size: 3em;  
   margin-bottom: 5px;
+}
+.contact-info-block {
+  text-align: center;
+  margin: auto;
+  background: url('../img/header-bg2.png');
+  background-position: 100px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 250px;
+}
+.contact-info-block h1 {
+  color: #57b7ba;
+  font-size: 2.5em;
+}
+.contact-info-block h3{
+  color: #9c44d4;
+}
+.contact-info-block a {
+  color: #d444bc;
 }
 
   /* ==========================================================================
