@@ -142,8 +142,11 @@ svg:not(:root) {
 }
 .three-block-section {
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  
   background-color: #3d3d3d;
+
 }
 
 .block {
