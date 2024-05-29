@@ -88,13 +88,14 @@
   .hero {
 	background: url('../img/header-bg.png') center no-repeat;
 	background-size: cover;
-	padding:100px 0 100px 0;
+	padding:10% 0 10% 0;
     text-align:center;
 	height:auto;
 	background-color: #f2f2f2;
+  text-size-adjust: auto;
 }
 .hero h1 {
-	font-size: 120px;
+	font-size: 7em;
 	letter-spacing: -5px;
 	margin: 0;
 	font-weight: 600;
@@ -144,7 +145,7 @@ svg:not(:root) {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+
   background-color: #3d3d3d;
 
 }
@@ -165,11 +166,6 @@ svg:not(:root) {
 .contact-info-block {
   text-align: center;
   margin: auto;
-  background: url('../img/header-bg2.png');
-  background-position: 100px;
-  background-repeat: no-repeat;
-  background-size: contain;
-  padding-left: 250px;
 }
 .contact-info-block h1 {
   color: #57b7ba;
@@ -275,7 +271,40 @@ svg:not(:root) {
     (min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
   }
-  
+  //desktop
+@media only screen and (min-width: 960px)  and (max-width: 1140px){
+
+    body { min-width:960px; }
+
+    #icon {
+        background-position:-20px 0;
+        height:15px;
+        width:15px;}
+
+}
+
+//tablets
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+    body { min-width:768px; }
+
+    #icon {
+        background-position:-32px 0px;
+        height:12px;
+        width:12px;}
+
+}
+
+//mobile
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    body { min-width:480px; }
+
+    #icon {
+        background-position:-50px 0px;
+        height:10px;
+        width:10px;
+}
   /* ==========================================================================
      Print styles.
      Inlined to avoid the additional HTTP request:
