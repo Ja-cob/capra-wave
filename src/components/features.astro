@@ -1,0 +1,50 @@
+---
+// @ts-ignore
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Data Insights",
+    description:
+      "Get critical informations to help you make better business decisions.",
+    icon: "bx:bx-scatter-chart",
+  },
+  {
+    title: "Ecommerce Optimization",
+    description:
+      "Most companies overpay for services and third party apps. We can help reduce those costs.",
+    icon: "bx:bx-store-alt",
+  },
+  {
+    title: "IT Consulting",
+    description:
+      "We know more than how to turn things off and back on again.",
+    icon: "bx:bx-laptop",
+  },
+];
+---
+
+<div class="mt-16 md:mt-0">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Everything you need to propel your business
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    We give you the tools to keep up with today's technology.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  {
+    features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-white" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))
+  }
+</div>
