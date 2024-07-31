@@ -16,6 +16,24 @@ const features = [
     icon: "bx:bx-store-alt",
   },
   {
+    title: "Networking",
+    description:
+      "Ensure a robust and secure network infrastructure to support your operations seamlessly.",
+    icon: "bx:bx-signal-5",
+  },
+  {
+    title: "VOIP Setup",
+    description:
+      "Implement a reliable and cost-effective VOIP phone system tailored to your business needs.",
+    icon: "bx:bx-phone",
+  },
+  {
+    title: "Access Control + Monitoring",
+    description:
+      "Enhance security with advanced access control systems to protect your business.",
+    icon: "bx:bx-lock",
+  },
+  {
     title: "IT Consulting",
     description:
       "We offer expert knowledge beyond the basics of turning things off and on.",
@@ -37,8 +55,8 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-black rounded-full  p-2 w-8 h-8 shrink-0">
-          <Icon class="text-white" name={item.icon} />
+        <div class="mt-1 bg-cyan-400 rounded-full  p-2 w-8 h-8 shrink-0">
+          <Icon class="text-black" name={item.icon} />
         </div>
         <div>
           <h3 class="font-semibold text-lg">{item.title}</h3>{" "}
