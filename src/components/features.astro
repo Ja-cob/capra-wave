@@ -22,16 +22,16 @@ const features = [
     icon: "bx:bx-signal-5",
   },
   {
-    title: "VOIP Setup",
+    title: "Voice Over IP (VOIP) Services",
     description:
       "Implement a reliable and cost-effective VOIP phone system tailored to your business needs.",
     icon: "bx:bx-phone",
   },
   {
-    title: "Access Control + Monitoring",
+    title: "Website Setup and Maintainence",
     description:
-      "Enhance security with advanced access control systems to protect your business.",
-    icon: "bx:bx-lock",
+      "Get a hassle-free website with responsive support. Make your own changes or let us help at no extra cost.",
+    icon: "bx:bx-planet",
   },
   {
     title: "IT Consulting",
@@ -44,7 +44,7 @@ const features = [
 
 <div class="mt-16 md:mt-0" style="text-align: center;">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight" >
-    Everything you need to propel your business
+    <a class="text-purple-600">Everything</a> you need to <a class="text-purple-600">propel</a> your business
   </h2>
   <p class="text-lg mt-4 text-slate-600">
     We provide the tools to keep you up-to-date with today's technology.
@@ -55,7 +55,7 @@ const features = [
   {
     features.map((item) => (
       <div class="flex gap-4 items-start">
-        <div class="mt-1 bg-cyan-400 rounded-full  p-2 w-8 h-8 shrink-0">
+        <div class="mt-1 bg-teal-400 rounded-full  p-2 w-8 h-8 shrink-0">
           <Icon class="text-black" name={item.icon} />
         </div>
         <div>
